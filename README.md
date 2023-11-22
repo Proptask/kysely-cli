@@ -39,7 +39,7 @@ After running this command, you will find the compiled binary in `target/release
 Ensure that the binary is executable:
 
 ```sh
-chmod +x target/release/branching
+chmod +x target/release/kysely
 ```
 
 ### 4. Move the Binary to a Directory in Your PATH
@@ -57,13 +57,13 @@ You should see `/usr/local/bin` listed in the output. If not, you will need to a
 Next, move the binary:
 
 ```sh
-sudo mv target/release/branching /usr/local/bin/
+sudo mv target/release/kysely /usr/local/bin/
 ```
 
 Now, you should be able to run your program from anywhere in your system just by typing its name:
 
 ```sh
-branching
+kysely
 ```
 
 ### 5. (Optional) Set Permissions
@@ -71,7 +71,7 @@ branching
 If you want other users on your system to be able to run the app, you may need to set the appropriate permissions. For example:
 
 ```sh
-sudo chmod 755 /usr/local/bin/branching
+sudo chmod 755 /usr/local/bin/kysely
 ```
 
 This command gives read and execute permissions to everyone and write permission to the owner.
