@@ -57,7 +57,7 @@ You should see `/usr/local/bin` listed in the output. If not, you will need to a
 Next, move the binary:
 
 ```sh
-sudo mv target/release/kysely /usr/local/bin/
+sudo mv target/release/kysely-cli /usr/local/bin/kysely
 ```
 
 Now, you should be able to run your program from anywhere in your system just by typing its name:
@@ -77,3 +77,13 @@ sudo chmod 755 /usr/local/bin/kysely
 This command gives read and execute permissions to everyone and write permission to the owner.
 
 That's it! Your Rust CLI app should now be globally available on your Linux OS.
+
+### 6. Usage
+
+Running:
+
+```
+kysely -n <migration_name>
+```
+
+will create a migration in the current folder.
